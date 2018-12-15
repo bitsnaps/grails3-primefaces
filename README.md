@@ -10,7 +10,7 @@ This plugin has not yet been submitted to the Grails repository.  For now you wi
 
 Then add this dependency to your project:
 ```
-    compile "net.prominic.grails.plugins:grails3-primefaces:0.2"
+    compile "net.prominic.grails.plugins:grails3-primefaces-plugin:0.2"
 ```
 
 To run with the default Tomcat container, you will also need to add these WEB-INF files:
@@ -59,18 +59,18 @@ To run with the default Tomcat container, you will also need to add these WEB-IN
 </web-app>
 ```
 
-You can see an example project and some demo instructions in [this project](https://github.com/prominic/grails3-primefaces-demo)
+You can see an example project and some demo instructions in [this project](https://github.com/bitsnaps/grails3-primefaces-demo)
 
 ## Dependencies
 
-This plugin was written and tested on Grails 3.3.3.
+This plugin was written and tested on Grails 3.3.6.
 
 ## Usage
 
 To generate the beans, use this command:
 
     ./grailsw run-command pf-generate-all mypackage.MyDomain
-    
+
 This will generate the following files:
 * grails-app/services/mypackage/MyDomainService.groovy
 * src/main/groovy/mypackage/beans/MyDomainManageBean.groovy (the ManagedBean is called "myDomainMB")
@@ -97,9 +97,10 @@ You can then define .xhtml files to reference these beans in:
 
 ## Authors
 
-* [mibesoft](https://github.com/mibesoft/primefaces) - Original code 
+* [mibesoft](https://github.com/mibesoft/primefaces) - Original code
 * [feather812002](https://github.com/feather812002) - Grails 3 Conversion
 * [JoelProminic](https://github.com/JoelProminic) - Cleanup and Documentation
+* [bitsnaps](https://github.com/bitsnaps) - Upgrade to grails 3.3.6 and cleanup
 
 ## License
 

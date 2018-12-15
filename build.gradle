@@ -58,7 +58,7 @@ dependencies {
     compile 'org.springframework.webflow:spring-faces:2.5.0.RELEASE'
     compile 'org.glassfish:javax.faces:2.2.17'
 	compile 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.1'
-	
+
 	// in case of issues - replace with 'compile'
 	provided 'javax.el:javax.el-api:2.2.1'
 	provided 'javax.servlet.jsp.jstl:jstl-api:1.2'
@@ -66,7 +66,8 @@ dependencies {
     compile 'org.primefaces:primefaces:6.2'
     compile 'org.primefaces.extensions:primefaces-extensions:6.2.4'
 
-    compile 'org.grails:grails-datastore-rest-client:5.0.0.RC2'
+    //compile 'org.grails:grails-datastore-rest-client:5.0.0.RC2'
+    compile 'org.grails:grails-datastore-rest-client:6.1.10.RELEASE'
     //build "org.grails.plugins:release:3.1.2"
     //runtime group: 'org.grails.plugins', name: 'release', version: '3.1.2'
 }
@@ -85,13 +86,13 @@ grailsPublish {
     // TODO: Provide values here
     user = 'user'
     key = 'key'
-    githubSlug = 'foo/bar'
+    githubSlug = 'prominic/grails3-primefaces'
     license {
         name = 'Apache-2.0'
     }
-    title = "My Plugin"
-    desc = "Full plugin description"
-    developers = [johndoe:"John Doe"]
+    title = "Grails3 Primefaces"
+    desc = "Grails3 Primefaces Plugin"
+    developers = [prominic:"Joel Anderson"]
 }
 
 
